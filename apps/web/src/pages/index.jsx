@@ -4,8 +4,8 @@ import { uniqueId } from "lodash";
 import React from "react";
 import toast, { Toaster } from "react-hot-toast";
 
-import { Button, DragAndDrop, FileList, Hero, Overlay } from "ui";
-import { Header } from "../components";
+import { Button, DragAndDrop, FileList, Hero, Overlay } from "../components";
+import { Header } from "../components/home";
 
 const Home = () => {
   const [files, setFiles] = React.useState([]);
@@ -20,7 +20,7 @@ const Home = () => {
   };
 
   const onUpload = async (e) => {
-    e.preventDefault();
+    e?.preventDefault();
     const formData = new FormData();
     formData.append("file", originalFiles[0]);
 
@@ -96,7 +96,11 @@ const Home = () => {
           <form onSubmit={(e) => onUpload(e)} encType="multipart/form-data">
             <DragAndDrop onUpload={handleUpload} />
 
-            <FileList files={files} onDelete={handleDelete} />
+            <FileList
+              files={files}
+              onDelete={handleDelete}
+              onTryAgain={onUpload}
+            />
 
             {files?.length > 0 && (
               <div className="mt-8">

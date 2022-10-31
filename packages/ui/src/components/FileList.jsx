@@ -1,29 +1,29 @@
-import Image from 'next/image';
-import 'react-circular-progressbar/dist/styles.css';
+import Image from "next/image";
+import "react-circular-progressbar/dist/styles.css";
 
-import { ExclamationCircleIcon } from '@heroicons/react/outline';
+import { ExclamationCircleIcon } from "@heroicons/react/outline";
 
-export const FileList = ({ files, onDelete }) => {
+export const FileList = ({ files, onDelete, onTryAgain }) => {
   return (
-    <div className='mt-5'>
+    <div className="mt-5">
       {files?.map((file) => (
         <li
-          className='flex justify-between items-center text-slate-400 w-80 '
+          className="flex w-80 items-center justify-between text-slate-400 "
           key={file.id}
         >
-          <div className='flex'>
+          <div className="flex">
             <Image
               width={36}
               height={36}
-              alt='Imagem de Preview'
-              className='rounded-md bg-no-repeat bg-cover bg-center mr-2'
+              alt="Imagem de Preview"
+              className="mr-2 rounded-md bg-cover bg-center bg-no-repeat"
               src={file.preview}
             />
 
-            <div className='flex flex-col justify-start ml-2'>
-              <strong className='text-sm text-gray-100'>{file.name}</strong>
+            <div className="ml-2 flex flex-col justify-start">
+              <strong className="text-sm text-gray-100">{file.name}</strong>
 
-              <span className='text-xs text-gray-100 mt-1 text-left'>
+              <span className="mt-1 text-left text-xs text-gray-100">
                 {file.readableSize}
 
                 {/* {!!file.url && (
@@ -39,7 +39,7 @@ export const FileList = ({ files, onDelete }) => {
           </div>
 
           <div>
-            <span className='text-white'>{file.progress}%</span>
+            {/* <span className='text-white'>{file.progress}%</span> */}
 
             {/* {file.url && (
               <a href={file.url} target='_blank' rel='noopener noreferrer'>
@@ -52,7 +52,16 @@ export const FileList = ({ files, onDelete }) => {
             )} */}
 
             {file.error && (
-              <ExclamationCircleIcon className='mr-2 text-red-500 w-5 h-5' />
+              <div className="flex flex-col items-center">
+                <button
+                  className="ml-1 cursor-pointer border-none bg-transparent text-xs text-slate-100"
+                  onClick={() => onTryAgain()}
+                >
+                  Tentar novamente
+                </button>
+
+                <ExclamationCircleIcon className="mr-2 h-5 w-5 text-red-400" />
+              </div>
             )}
           </div>
         </li>

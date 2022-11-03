@@ -4,8 +4,8 @@ import { uniqueId } from "lodash";
 import React from "react";
 import toast, { Toaster } from "react-hot-toast";
 
-import { Button, DragAndDrop, FileList, Hero, Overlay } from "../components";
-import { Header } from "../components/home";
+import { Button, DragAndDrop, FileList, Hero, Overlay } from "ui";
+import { Header } from "../components";
 
 const Home = () => {
   const [files, setFiles] = React.useState([]);

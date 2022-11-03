@@ -6,9 +6,9 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --filter=web",
+    "dev": "turbo run dev --filter=web...",
     "dev:all": "turbo run dev --parallel",
-    "dev:api": "turbo run dev --filter=api",
+    "dev:api": "turbo run dev --filter=api...",
     "lint": "turbo run lint",
     "clean": "turbo run clean",
     "format": "prettier --write \"**/*.{js,jsx,md}\""

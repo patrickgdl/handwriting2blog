@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Josefin: ['"Josefin Sans"', "sans-serif"],
+        display: ["Satoshi-Variable, system-ui", "sans-serif"],
       },
     },
   },

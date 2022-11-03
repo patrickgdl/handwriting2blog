@@ -1,14 +1,5 @@
 {
   "$schema": "https://turborepo.org/schema.json",
-  "globalDependencies": [
-    "$GOOGLE_SERVICE_KEY",
-    "$NODE_ENV",
-    "$PORT",
-    "$BUCKET_NAME",
-    "$HOSTNAME",
-    "$PORT",
-    "$BASE_URL"
-  ],
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
@@ -23,5 +14,13 @@
     "clean": {
       "cache": false
     }
-  }
+  },
+  "globalEnv": [
+    "GOOGLE_SERVICE_KEY",
+    "NODE_ENV",
+    "PORT",
+    "BUCKET_NAME",
+    "HOSTNAME",
+    "BASE_URL"
+  ]
 }

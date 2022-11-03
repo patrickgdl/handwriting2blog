@@ -4,8 +4,9 @@ import { uniqueId } from "lodash";
 import React from "react";
 import toast, { Toaster } from "react-hot-toast";
 
-import { Button, DragAndDrop, FileList, Hero, Overlay } from "ui";
-import { Header } from "../components";
+import { Button, DragAndDrop, FileList, Overlay } from "ui";
+import { Header, Hero, Why, Features, More } from "../components/home";
+import { Meta } from "../components/layout";
 
 const Home = () => {
   const [files, setFiles] = React.useState([]);
@@ -82,15 +83,15 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-gray-900">
-      {/* Hero section */}
+    <div className="bg-white">
+      <Meta />
+
       <div className="relative h-screen">
         <Overlay />
 
-        {/* Navigation */}
         <Header />
 
-        <div className="relative mx-auto flex max-w-3xl flex-col items-center px-6 pt-24 text-center sm:pt-20 lg:px-0">
+        <div className="relative mx-auto flex flex-col items-center px-6 pt-24 text-center sm:pt-20 lg:px-0">
           <Hero />
 
           <form onSubmit={(e) => onUpload(e)} encType="multipart/form-data">
@@ -121,6 +122,12 @@ const Home = () => {
           </form>
         </div>
       </div>
+
+      <Why />
+
+      <Features />
+
+      <More />
 
       <Toaster />
     </div>

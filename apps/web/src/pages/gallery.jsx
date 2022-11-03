@@ -56,7 +56,6 @@ function classNames(...classes) {
 }
 
 export default function Gallery() {
-  /* Main content */
   return (
     <Layout>
       <div className="flex flex-1 items-stretch overflow-hidden">

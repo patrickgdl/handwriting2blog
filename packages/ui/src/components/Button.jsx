@@ -12,7 +12,7 @@ export const Button = ({ showProgress, progress, children, ...props }) => {
         <CircularProgressbar
           styles={{
             root: { width: 24, height: 24, marginLeft: 8 },
-            path: { stroke: "rgb(79 70 229)" },
+            path: { stroke: "#fff" },
           }}
           strokeWidth={10}
           value={progress}

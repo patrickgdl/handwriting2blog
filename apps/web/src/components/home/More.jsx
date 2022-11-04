@@ -10,39 +10,35 @@ export const More = () => {
           </h2>
           <p className="mt-4 text-lg text-slate-700 lg:max-w-lg">
             Podemos converter seus textos para mais do que apenas uma postagem
-            no blog.
-            <br />
-            Reutilize seu conteúdo de outras maneiras.
+            no blog. Reutilize seu conteúdo de outras maneiras.
           </p>
         </div>
 
         <div className="relative mx-auto mt-8 max-w-2xl space-y-8 px-4 sm:px-6 lg:px-8 xl:px-0">
-          <div className="grid grid-cols-[1fr,3fr] overflow-hidden rounded border-2 border-slate-600 bg-gradient-to-tr from-purple-900 via-violet-800 to-pink-600 pt-10 pl-10">
-            <p className="bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text pt-5 text-lg font-medium text-transparent">
+          <div className="grid grid-cols-[1fr,3fr] overflow-hidden rounded border-2 border-slate-600 bg-gradient-to-tr from-indigo-500 via-purple-500 to-blue-500 pt-10 pl-10 saturate-150">
+            <p className="pt-5 text-lg font-medium text-white">
               Integração com Medium
             </p>
             <div className="ml-10 flex h-full items-center rounded-tl-lg bg-white py-12 px-10">
-              <p className="bg-gradient-to-tr from-blue-900 via-violet-700 to-green-700 bg-clip-text text-2xl font-medium text-transparent">
+              <p className="bg-gradient-to-tr from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-2xl font-medium text-transparent saturate-150">
                 Em breve…
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-[1fr,3fr] overflow-hidden rounded border-2 border-slate-600 bg-gradient-to-tr from-blue-900 via-violet-700 to-green-700 pt-10 pl-10">
-            <p className="bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text pt-5 text-lg font-medium text-transparent">
-              Analytics
-            </p>
+          <div className="grid grid-cols-[1fr,3fr] overflow-hidden rounded border-2 border-slate-600 bg-gradient-to-tr from-indigo-500 via-purple-500 to-blue-500 pt-10 pl-10 saturate-150">
+            <p className="pt-5 text-lg font-medium text-white">Analytics</p>
             <div className="ml-10 flex h-full items-center rounded-tl-lg bg-white py-12 px-10">
-              <p className="bg-gradient-to-tr from-blue-900 via-violet-700 to-green-700 bg-clip-text text-2xl font-medium text-transparent">
+              <p className="bg-gradient-to-tr from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-2xl font-medium text-transparent saturate-150">
                 Em breve…
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-[1fr,3fr] overflow-hidden rounded border-2 border-slate-600 bg-gradient-to-tr from-sky-700 via-cyan-600 to-cyan-600 pt-10 pl-10">
-            <p className="bg-gradient-to-r from-purple-200 to-sky-200 bg-clip-text pt-2 text-lg font-medium text-transparent">
+          <div className="grid grid-cols-[1fr,3fr] overflow-hidden rounded border-2 border-slate-600 bg-gradient-to-tr from-indigo-500 via-purple-500 to-blue-500 pt-10 pl-10 saturate-150">
+            <p className="pt-2 text-lg font-medium text-white">
               Threads no Twitter
             </p>
             <div className="ml-10 flex h-full items-center rounded-tl-lg bg-white py-12 px-10">
-              <p className="bg-gradient-to-tr from-sky-700 via-cyan-600 to-cyan-600 bg-clip-text text-2xl font-medium text-transparent">
+              <p className="bg-gradient-to-tr from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-2xl font-medium text-transparent saturate-150">
                 Em breve…
               </p>
             </div>

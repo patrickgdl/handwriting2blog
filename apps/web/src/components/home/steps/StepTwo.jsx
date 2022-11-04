@@ -25,7 +25,7 @@ export const StepTwo = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center lg:w-3/5">
-          <div className="relative h-40 rounded bg-gradient-to-br bg-gradient-to-br from-indigo-500 via-purple-500 to-blue-500 shadow-2xl shadow-violet-400/80 ring-2 ring-violet-500 ring-offset-2 saturate-150">
+          <div className="relative h-40 rounded bg-gradient-to-br from-indigo-500 via-purple-500 to-blue-500 shadow-2xl shadow-violet-400/80 ring-2 ring-violet-500 ring-offset-2 saturate-150">
             <img
               src="/taking-picture.png"
               className="h-full rounded object-cover"

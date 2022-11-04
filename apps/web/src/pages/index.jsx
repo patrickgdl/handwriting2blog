@@ -19,7 +19,7 @@ const Home = () => {
       <div className="h-screen">
         <Header />
 
-        <div className="relative flex flex-col items-center px-6 pt-24 text-center sm:pt-20 lg:px-0">
+        <div className="flex h-[calc(100%_-_80px)] flex-col items-center justify-center text-center">
           <Hero />
 
           <FileUpload />

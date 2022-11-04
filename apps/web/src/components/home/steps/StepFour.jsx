@@ -45,7 +45,7 @@ export const StepFour = () => {
                     <span className="italic"> ítalico</span>.
                   </div>
 
-                  <div className="font-cursive absolute -right-40 -top-24 hidden w-32 -rotate-3 text-lg leading-tight text-purple-700 lg:block">
+                  <div className="font-cursive absolute -right-20 -top-24 hidden w-32 -rotate-3 text-lg leading-tight text-violet-700 lg:block">
                     Seu site está pronto para o mundo.
                   </div>
                 </div>

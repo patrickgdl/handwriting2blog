@@ -54,7 +54,7 @@ export const DragAndDrop = ({ onUpload }) => {
       {({ getRootProps, getInputProps, isDragActive, isDragReject }) => (
         <DropContainer>
           <div
-            className="rounded-md border-2 border-dashed border-purple-400 px-6 pt-5 pb-6"
+            className="rounded-md border-2 border-dashed border-indigo-600 px-6 pt-5 pb-6 hover:border-solid"
             {...getRootProps()}
           >
             <svg

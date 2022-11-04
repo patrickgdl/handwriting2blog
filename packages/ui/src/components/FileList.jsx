@@ -52,7 +52,7 @@ export const FileList = ({ files, onDelete, onTryAgain }) => {
             {file.error && (
               <div className="flex flex-col items-center">
                 <button
-                  className="ml-1 cursor-pointer border-none bg-transparent text-xs text-purple-800"
+                  className="ml-1 cursor-pointer border-none bg-transparent text-xs text-indigo-800"
                   onClick={() => onTryAgain()}
                 >
                   Tentar novamente

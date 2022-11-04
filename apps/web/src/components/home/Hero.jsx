@@ -2,7 +2,7 @@ import React from "react";
 
 export const Hero = () => {
   return (
-    <div className="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 xl:px-0">
+    <div className="relative mx-auto max-w-3xl">
       <h1 className="relative mt-12 text-3xl font-extrabold leading-tight tracking-tight text-slate-800 md:text-5xl lg:text-center lg:text-4xl">
         <span>Crie um </span>
         <span className="relative inline-flex md:border-b-4 md:border-purple-300/40 md:pb-2 ">

@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import { Logo } from "ui";
 
 export default function Product() {
@@ -154,7 +152,7 @@ export default function Product() {
             <div className="flex items-center justify-end">
               <button
                 type="button"
-                className="export-button flex items-center space-x-2 whitespace-nowrap rounded bg-gradient-to-br from-violet-600 via-violet-700 to-slate-600 py-2 px-4 text-center text-sm font-semibold text-white transition hover:rotate-[-0.5deg] hover:scale-105"
+                className="flex items-center space-x-2 whitespace-nowrap rounded bg-gradient-to-br from-violet-600 via-violet-700 to-slate-600 py-2 px-4 text-center text-sm font-semibold text-white transition hover:rotate-[-0.5deg] hover:scale-105"
               >
                 <span>Export Blog Post</span>
                 <svg

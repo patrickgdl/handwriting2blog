@@ -4,108 +4,10 @@ export const StepThree = () => {
   return (
     <div className="mt-0 lg:mt-24">
       <div className="relative mx-auto max-w-6xl space-y-12 px-8 lg:flex lg:space-y-0 lg:space-x-24 xl:px-0">
-        <svg
-          className="absolute -left-4 top-10 z-0 hidden h-40 w-40 fill-current text-pink-200 opacity-20 xl:block"
-          viewBox="0 0 91 91"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g stroke="none" strokeWidth="1" fillRule="evenodd">
-            <g fillRule="nonzero">
-              <g>
-                <g>
-                  <circle cx="3.261" cy="3.445" r="2.72"></circle>
-                  <circle cx="15.296" cy="3.445" r="2.719"></circle>
-                  <circle cx="27.333" cy="3.445" r="2.72"></circle>
-                  <circle cx="39.369" cy="3.445" r="2.72"></circle>
-                  <circle cx="51.405" cy="3.445" r="2.72"></circle>
-                  <circle cx="63.441" cy="3.445" r="2.72"></circle>
-                  <circle cx="75.479" cy="3.445" r="2.72"></circle>
-                  <circle cx="87.514" cy="3.445" r="2.719"></circle>
-                </g>
-                <g transform="translate(0 12)">
-                  <circle cx="3.261" cy="3.525" r="2.72"></circle>
-                  <circle cx="15.296" cy="3.525" r="2.719"></circle>
-                  <circle cx="27.333" cy="3.525" r="2.72"></circle>
-                  <circle cx="39.369" cy="3.525" r="2.72"></circle>
-                  <circle cx="51.405" cy="3.525" r="2.72"></circle>
-                  <circle cx="63.441" cy="3.525" r="2.72"></circle>
-                  <circle cx="75.479" cy="3.525" r="2.72"></circle>
-                  <circle cx="87.514" cy="3.525" r="2.719"></circle>
-                </g>
-                <g transform="translate(0 24)">
-                  <circle cx="3.261" cy="3.605" r="2.72"></circle>
-                  <circle cx="15.296" cy="3.605" r="2.719"></circle>
-                  <circle cx="27.333" cy="3.605" r="2.72"></circle>
-                  <circle cx="39.369" cy="3.605" r="2.72"></circle>
-                  <circle cx="51.405" cy="3.605" r="2.72"></circle>
-                  <circle cx="63.441" cy="3.605" r="2.72"></circle>
-                  <circle cx="75.479" cy="3.605" r="2.72"></circle>
-                  <circle cx="87.514" cy="3.605" r="2.719"></circle>
-                </g>
-                <g transform="translate(0 36)">
-                  <circle cx="3.261" cy="3.686" r="2.72"></circle>
-                  <circle cx="15.296" cy="3.686" r="2.719"></circle>
-                  <circle cx="27.333" cy="3.686" r="2.72"></circle>
-                  <circle cx="39.369" cy="3.686" r="2.72"></circle>
-                  <circle cx="51.405" cy="3.686" r="2.72"></circle>
-                  <circle cx="63.441" cy="3.686" r="2.72"></circle>
-                  <circle cx="75.479" cy="3.686" r="2.72"></circle>
-                  <circle cx="87.514" cy="3.686" r="2.719"></circle>
-                </g>
-                <g transform="translate(0 49)">
-                  <circle cx="3.261" cy="2.767" r="2.72"></circle>
-                  <circle cx="15.296" cy="2.767" r="2.719"></circle>
-                  <circle cx="27.333" cy="2.767" r="2.72"></circle>
-                  <circle cx="39.369" cy="2.767" r="2.72"></circle>
-                  <circle cx="51.405" cy="2.767" r="2.72"></circle>
-                  <circle cx="63.441" cy="2.767" r="2.72"></circle>
-                  <circle cx="75.479" cy="2.767" r="2.72"></circle>
-                  <circle cx="87.514" cy="2.767" r="2.719"></circle>
-                </g>
-                <g transform="translate(0 61)">
-                  <circle cx="3.261" cy="2.846" r="2.72"></circle>
-                  <circle cx="15.296" cy="2.846" r="2.719"></circle>
-                  <circle cx="27.333" cy="2.846" r="2.72"></circle>
-                  <circle cx="39.369" cy="2.846" r="2.72"></circle>
-                  <circle cx="51.405" cy="2.846" r="2.72"></circle>
-                  <circle cx="63.441" cy="2.846" r="2.72"></circle>
-                  <circle cx="75.479" cy="2.846" r="2.72"></circle>
-                  <circle cx="87.514" cy="2.846" r="2.719"></circle>
-                </g>
-                <g transform="translate(0 73)">
-                  <circle cx="3.261" cy="2.926" r="2.72"></circle>
-                  <circle cx="15.296" cy="2.926" r="2.719"></circle>
-                  <circle cx="27.333" cy="2.926" r="2.72"></circle>
-                  <circle cx="39.369" cy="2.926" r="2.72"></circle>
-                  <circle cx="51.405" cy="2.926" r="2.72"></circle>
-                  <circle cx="63.441" cy="2.926" r="2.72"></circle>
-                  <circle cx="75.479" cy="2.926" r="2.72"></circle>
-                  <circle cx="87.514" cy="2.926" r="2.719"></circle>
-                </g>
-                <g transform="translate(0 85)">
-                  <circle cx="3.261" cy="3.006" r="2.72"></circle>
-                  <circle cx="15.296" cy="3.006" r="2.719"></circle>
-                  <circle cx="27.333" cy="3.006" r="2.72"></circle>
-                  <circle cx="39.369" cy="3.006" r="2.72"></circle>
-                  <circle cx="51.405" cy="3.006" r="2.72"></circle>
-                  <circle cx="63.441" cy="3.006" r="2.72"></circle>
-                  <circle cx="75.479" cy="3.006" r="2.72"></circle>
-                  <circle cx="87.514" cy="3.006" r="2.719"></circle>
-                </g>
-              </g>
-            </g>
-          </g>
-        </svg>
-
         <div className="relative z-30 flex w-full max-w-xl flex-col lg:w-2/5">
           <div className="relative h-24 w-40 rounded bg-gradient-to-br from-indigo-500 via-purple-500 to-blue-500 ring-2 ring-pink-500 ring-offset-2 saturate-150">
-            <div className="flex h-full w-full -translate-x-2 items-center justify-center text-7xl  text-yellow-300">
+            <div className="flex h-full w-full items-center justify-center text-7xl  text-yellow-300">
               3
-            </div>
-            <div className="absolute right-5 -bottom-8 mx-auto flex max-w-sm items-center space-x-1">
-              <div className="h-12 w-[3px] rounded-full bg-pink-500"></div>
-              <div className="h-16 w-[3px] rounded-full bg-pink-500"></div>
-              <div className="h-12 w-[3px] rounded-full bg-pink-500"></div>
             </div>
           </div>
           <h2 className="mt-12 bg-gradient-to-br from-slate-900 to-violet-700 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl sm:leading-none">

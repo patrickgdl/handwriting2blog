@@ -21,9 +21,9 @@ export const FileList = ({ files, onDelete, onTryAgain }) => {
             />
 
             <div className="ml-2 flex flex-col justify-start">
-              <strong className="text-sm text-gray-100">{file.name}</strong>
+              <strong className="text-sm text-slate-800">{file.name}</strong>
 
-              <span className="mt-1 text-left text-xs text-gray-100">
+              <span className="mt-1 text-left text-xs text-slate-700">
                 {file.readableSize}
 
                 {/* {!!file.url && (
@@ -39,8 +39,6 @@ export const FileList = ({ files, onDelete, onTryAgain }) => {
           </div>
 
           <div>
-            {/* <span className='text-white'>{file.progress}%</span> */}
-
             {/* {file.url && (
               <a href={file.url} target='_blank' rel='noopener noreferrer'>
                 <LinkIcon className='mr-2 text-gray-700 w-5 h-5' />
@@ -54,7 +52,7 @@ export const FileList = ({ files, onDelete, onTryAgain }) => {
             {file.error && (
               <div className="flex flex-col items-center">
                 <button
-                  className="ml-1 cursor-pointer border-none bg-transparent text-xs text-slate-100"
+                  className="ml-1 cursor-pointer border-none bg-transparent text-xs text-purple-800"
                   onClick={() => onTryAgain()}
                 >
                   Tentar novamente

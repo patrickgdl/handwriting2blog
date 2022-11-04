@@ -58,7 +58,7 @@ export const DragAndDrop = ({ onUpload }) => {
             {...getRootProps()}
           >
             <svg
-              ariaHidden="true"
+              aria-hidden="true"
               focusable="false"
               className="mx-auto h-10 w-10"
               viewBox="0 0 16 16"

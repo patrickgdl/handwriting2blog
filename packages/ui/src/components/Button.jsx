@@ -4,7 +4,7 @@ export const Button = ({ showProgress, progress, children, ...props }) => {
   return (
     <button
       {...props}
-      className="flex w-full justify-center rounded-md border border-transparent bg-white py-3 px-8 text-base font-medium text-indigo-600 hover:bg-gray-100 hover:text-indigo-500 disabled:opacity-25"
+      className="flex w-full items-center justify-center space-x-2 whitespace-nowrap rounded bg-gradient-to-br from-violet-600 via-violet-700 to-slate-600 py-2 px-4 text-center text-sm font-semibold text-white transition hover:rotate-[-0.5deg] hover:scale-105 disabled:opacity-25"
     >
       {children}
 

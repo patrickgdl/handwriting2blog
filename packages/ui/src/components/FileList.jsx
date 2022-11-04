@@ -1,7 +1,7 @@
 import Image from "next/image";
 import "react-circular-progressbar/dist/styles.css";
 
-import { ExclamationCircleIcon } from "@heroicons/react/outline";
+import { ExclamationCircleIcon } from "@heroicons/react/24/outline";
 
 export const FileList = ({ files, onDelete, onTryAgain }) => {
   return (

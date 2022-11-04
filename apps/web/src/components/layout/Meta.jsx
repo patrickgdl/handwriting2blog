@@ -1,9 +1,8 @@
-import Head from "next/head";
 import { FAVICON_FOLDER } from "../lib/constants";
 
 export function Meta() {
   return (
-    <Head>
+    <>
       <title>handwriting2html</title>
       <meta
         name="description"
@@ -50,6 +49,6 @@ export function Meta() {
         content="An open-source handwriting to HTML converter"
       />
       <meta name="twitter:image" content="https://escrita.com/thumbnail.png" />
-    </Head>
+    </>
   );
 }

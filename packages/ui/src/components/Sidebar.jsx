@@ -1,18 +1,18 @@
 import { Dialog, Transition } from "@headlessui/react";
 import {
   CogIcon,
-  CollectionIcon,
+  CircleStackIcon,
   HomeIcon,
-  ViewGridIcon as ViewGridIconOutline,
-  XIcon,
-} from "@heroicons/react/outline";
+  ArrowUpTrayIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 import React, { Fragment } from "react";
 import { Logo } from "../components";
 
 const navigation = [
   { name: "Home", href: "#", icon: HomeIcon, current: false },
-  { name: "Uploads", href: "#", icon: ViewGridIconOutline, current: true },
-  { name: "Posts", href: "#", icon: CollectionIcon, current: false },
+  { name: "Uploads", href: "#", icon: ArrowUpTrayIcon, current: true },
+  { name: "Posts", href: "#", icon: CircleStackIcon, current: false },
   { name: "Configurações", href: "#", icon: CogIcon, current: false },
 ];
 
@@ -100,7 +100,10 @@ export const Sidebar = ({ mobileMenuOpen, onCloseMenuMobile }) => {
                     className="flex h-12 w-12 items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-white"
                     onClick={() => onCloseMenuMobile()}
                   >
-                    <XIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                    <XMarkIcon
+                      className="h-6 w-6 text-white"
+                      aria-hidden="true"
+                    />
                     <span className="sr-only">Fechar sidebar</span>
                   </button>
                 </div>

@@ -1,10 +1,10 @@
-import { HeartIcon } from "@heroicons/react/outline";
+import { HeartIcon } from "@heroicons/react/24/outline";
 import {
   PencilIcon,
   PlusIcon as PlusIconSolid,
-  ViewGridIcon as ViewGridIconSolid,
-  ViewListIcon,
-} from "@heroicons/react/solid";
+  TableCellsIcon,
+  QueueListIcon,
+} from "@heroicons/react/20/solid";
 import Image from "next/image";
 import { Layout } from "ui";
 
@@ -70,14 +70,14 @@ export default function Gallery() {
                   type="button"
                   className="rounded-md p-1.5 text-gray-400 hover:bg-white hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                 >
-                  <ViewListIcon className="h-5 w-5" aria-hidden="true" />
+                  <QueueListIcon className="h-5 w-5" aria-hidden="true" />
                   <span className="sr-only">Use list view</span>
                 </button>
                 <button
                   type="button"
                   className="ml-0.5 rounded-md bg-white p-1.5 text-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                 >
-                  <ViewGridIconSolid className="h-5 w-5" aria-hidden="true" />
+                  <TableCellsIcon className="h-5 w-5" aria-hidden="true" />
                   <span className="sr-only">Use grid view</span>
                 </button>
               </div>
@@ -127,17 +127,14 @@ export default function Gallery() {
                       type="button"
                       className="rounded-md p-1.5 text-gray-400 hover:bg-white hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                     >
-                      <ViewListIcon className="h-5 w-5" aria-hidden="true" />
+                      <QueueListIcon className="h-5 w-5" aria-hidden="true" />
                       <span className="sr-only">List view</span>
                     </button>
                     <button
                       type="button"
                       className="ml-0.5 rounded-md bg-white p-1.5 text-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                     >
-                      <ViewGridIconSolid
-                        className="h-5 w-5"
-                        aria-hidden="true"
-                      />
+                      <TableCellsIcon className="h-5 w-5" aria-hidden="true" />
                       <span className="sr-only">Grid view</span>
                     </button>
                   </div>

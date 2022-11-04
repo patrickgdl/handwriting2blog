@@ -2,7 +2,7 @@ import React from "react";
 
 export const More = () => {
   return (
-    <div className="font-display mt-40 mb-40">
+    <div className="mt-40 mb-40">
       <div>
         <div className="relative mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 xl:px-0">
           <h2 className="bg-gradient-to-br from-slate-900 to-violet-700 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:leading-none lg:text-4xl">

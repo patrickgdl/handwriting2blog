@@ -5,7 +5,7 @@ export const StepOne = () => {
     <div className="mt-24 lg:mt-32">
       <div className="relative mx-auto max-w-6xl space-y-12 px-8 lg:flex lg:space-y-0 lg:space-x-24 xl:px-0">
         <div className="relative z-30 flex w-full max-w-xl flex-col lg:w-2/5">
-          <div className="relative h-24 w-40 rounded bg-gradient-to-br from-indigo-500 via-purple-500 to-blue-500 ring-2 ring-yellow-300 ring-offset-2 saturate-150">
+          <div className="relative h-24 w-40 rounded bg-gradient-to-br from-indigo-400 via-purple-400 to-blue-200 ring-2 ring-yellow-300 ring-offset-2 saturate-150">
             <div className="flex h-full w-full items-center justify-center text-7xl  text-yellow-300">
               1
             </div>
@@ -20,7 +20,7 @@ export const StepOne = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center lg:w-3/5">
-          <div className="relative h-40 rounded bg-gradient-to-br from-indigo-500 via-purple-500 to-blue-500 shadow-2xl shadow-violet-400/80 ring-2 ring-violet-500 ring-offset-2 saturate-150">
+          <div className="relative h-40 rounded bg-gradient-to-br from-indigo-400 via-purple-400 to-blue-200 shadow-2xl shadow-violet-400/80 ring-2 ring-violet-500 ring-offset-2 saturate-150">
             <img
               src="https://i0.wp.com/thepostmansknock.com/wp-content/uploads/2017/03/1cursive_worksheet-12-of-15.jpg?resize=960%2C633&ssl=1"
               className="h-full rounded object-cover"

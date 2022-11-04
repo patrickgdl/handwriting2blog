@@ -39,7 +39,7 @@ export const Why = () => {
 
         {features.map((feature) => (
           <div key={feature.name} className="pt-6">
-            <div className="flow-root rounded-lg bg-gradient-to-br from-indigo-500 via-purple-500 to-blue-500 px-6 pb-8 saturate-150">
+            <div className="flow-root rounded-lg bg-gradient-to-br from-indigo-400 via-purple-400 to-blue-200 px-6 pb-8 saturate-150">
               <div className="-mt-6">
                 <div>
                   <span className="inline-flex items-center justify-center rounded-md border bg-white p-3 shadow-lg">

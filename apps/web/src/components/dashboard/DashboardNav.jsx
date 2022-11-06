@@ -10,7 +10,7 @@ import {
 
 export const navigationItems = [
   {
-    title: "Posts",
+    title: "Postagens",
     href: "/dashboard",
     icon: DocumentTextIcon,
   },
@@ -27,7 +27,7 @@ export const navigationItems = [
     disabled: true,
   },
   {
-    title: "Settings",
+    title: "Configurações",
     href: "/dashboard/settings",
     icon: Cog6ToothIcon,
   },

@@ -8,7 +8,7 @@ const Dashboard = ({ children }) => {
       <header className="flex h-[64px] items-center justify-between pl-2">
         <div className="flex items-center space-x-2">
           <Logo />
-          <span className="text-lg font-bold">PaperFlow</span>
+          {/* <span className="text-lg font-bold">Nome do Projeto</span> */}
         </div>
         <UserAccountNav
           user={{

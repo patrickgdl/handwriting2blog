@@ -12,7 +12,7 @@ import { Logo } from "../components";
 const navigation = [
   { name: "Home", href: "#", icon: HomeIcon, current: false },
   { name: "Uploads", href: "#", icon: ArrowUpTrayIcon, current: true },
-  { name: "Posts", href: "#", icon: CircleStackIcon, current: false },
+  { name: "Postagens", href: "#", icon: CircleStackIcon, current: false },
   { name: "Configurações", href: "#", icon: CogIcon, current: false },
 ];
 

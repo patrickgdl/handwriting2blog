@@ -24,12 +24,12 @@ export const Sidebar = () => {
           </div>
 
           <nav className="space-y-3 py-7">
-            {titles.map(({ label, isSubtitle, active }) => (
+            {titles.map(({ label, isSubtitle, active }, index) => (
               <button
                 className={`${isSubtitle ? "translate-x-5" : ""} ${
                   active ? "font-bold" : ""
                 } outline-button group relative flex w-full items-center space-x-3.5 text-sm text-slate-400 transition duration-300`}
-                id="o0"
+                key={`${label}-${index}`}
                 title={label}
               >
                 <span className="block truncate group-hover:text-yellow-300">

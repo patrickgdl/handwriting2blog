@@ -13,7 +13,7 @@ export default function Dashboard() {
   return (
     <DashboardLayout>
       <DashboardShell>
-        <DashboardHeader heading="Posts" text="Crie e gerencie posts.">
+        <DashboardHeader heading="Postagens" text="Crie e gerencie posts.">
           <PostCreateButton />
         </DashboardHeader>
 

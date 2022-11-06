@@ -1,14 +1,29 @@
+import Link from "next/link";
 import React from "react";
+import { Icons } from "ui";
 
-export const Header = () => {
+export const Header = ({ published }) => {
   return (
     <div className="sticky top-2 z-10 grid grid-cols-3 bg-white py-3 px-5">
-      <div className="bg-white" />
+      <Link
+        href="/dashboard"
+        className="rounded-lg border border-transparent bg-transparent py-2 pl-3 pr-5 text-sm font-medium text-slate-900 hover:border-slate-100 hover:bg-slate-100 focus:z-10 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-white dark:focus:ring-slate-700"
+      >
+        <a className="flex items-center">
+          <Icons.chevronLeft className="mr-2 h-4 w-4" />
+          Voltar
+        </a>
+      </Link>
 
-      <div className="flex items-center justify-center">Título</div>
+      <p className="flex items-center justify-center text-sm text-slate-500">
+        {published ? "Publicado" : "Rascunho"}
+      </p>
 
       <div className="flex items-center justify-end space-x-4">
-        <button className="flex text-slate-400 hover:text-slate-500">
+        <button
+          type="submit"
+          className="flex text-slate-400 hover:text-slate-500"
+        >
           <span className="pr-2"> Ajuda </span>
           <svg
             viewBox="0 0 24 24"
@@ -28,7 +43,7 @@ export const Header = () => {
             type="button"
             className="flex items-center space-x-2 whitespace-nowrap rounded bg-gradient-to-br from-violet-600 via-violet-700 to-slate-600 py-2 px-4 text-center text-sm font-semibold text-white transition hover:rotate-[-0.5deg] hover:scale-105"
           >
-            <span>Publicar</span>
+            <span>Salvar</span>
 
             <svg
               viewBox="0 0 24 24"

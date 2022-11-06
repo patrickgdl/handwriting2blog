@@ -1,4 +1,5 @@
 import {
+  ChevronLeftIcon,
   DocumentTextIcon,
   DocumentIcon,
   PhotoIcon,
@@ -6,6 +7,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 export const Icons = {
+  chevronLeft: ChevronLeftIcon,
   post: DocumentTextIcon,
   page: DocumentIcon,
   media: PhotoIcon,

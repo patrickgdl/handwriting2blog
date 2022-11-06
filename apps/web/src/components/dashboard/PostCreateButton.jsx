@@ -26,9 +26,9 @@ export function PostCreateButton({ className, ...props }) {
   async function onClick() {
     setIsLoading(!isLoading);
 
-    const post = await createPost();
+    // const post = await createPost();
 
-    router.push(`/editor/${post.id}`);
+    router.push(`/editor/${1}`);
   }
 
   return (

@@ -12,27 +12,27 @@ Alert.Trigger = React.forwardRef(function AlertTrigger({ ...props }, ref) {
 
 Alert.Portal = AlertDialogPrimitives.Portal;
 
-Alert.Content = React.forwardRef(
-  AlertDialogPrimitives.AlertDialogContentProps >
-    function AlertContent({ className, ...props }, ref) {
-      return (
-        <Alert.Portal>
-          <AlertDialogPrimitives.Overlay className="animate-in fade-in fixed inset-0 z-20 bg-black/50 opacity-100 transition-opacity">
-            <div className="fixed inset-0 z-40 flex items-center justify-center">
-              <AlertDialogPrimitives.Content
-                ref={ref}
-                className={cn(
-                  "animate-in fade-in-90 zoom-in-90 fixed z-50 grid w-[95vw] max-w-md scale-100 gap-4 rounded-lg bg-white p-6 opacity-100 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 md:w-full",
-                  className
-                )}
-                {...props}
-              />
-            </div>
-          </AlertDialogPrimitives.Overlay>
-        </Alert.Portal>
-      );
-    }
-);
+Alert.Content = React.forwardRef(function AlertContent(
+  { className, ...props },
+  ref
+) {
+  return (
+    <Alert.Portal>
+      <AlertDialogPrimitives.Overlay className="animate-in fade-in fixed inset-0 z-20 bg-black/50 opacity-100 transition-opacity">
+        <div className="fixed inset-0 z-40 flex items-center justify-center">
+          <AlertDialogPrimitives.Content
+            ref={ref}
+            className={cn(
+              "animate-in fade-in-90 zoom-in-90 fixed z-50 grid w-[95vw] max-w-md scale-100 gap-4 rounded-lg bg-white p-6 opacity-100 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 md:w-full",
+              className
+            )}
+            {...props}
+          />
+        </div>
+      </AlertDialogPrimitives.Overlay>
+    </Alert.Portal>
+  );
+});
 
 Alert.Header = function AlertHeader({ className, ...props }) {
   return <div className={cn("grid gap-1", className)} {...props} />;

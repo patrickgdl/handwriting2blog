@@ -1,27 +1,30 @@
-import { useRouter } from "next/router";
-
-import { Content, Sidebar, Header } from "../../components/editor";
+import { Editor as EditorContent, Sidebar } from "../../components/editor";
 
 export default function Editor() {
-  const router = useRouter();
-  const { id } = router.query;
+  const post = {
+    id: "1",
+    title: "Postagem sem título",
+    content: "This is the content",
+    published: false,
+  };
+
+  if (!post) {
+    <>Not Found</>;
+  }
 
   return (
     <div className="relative grid xl:grid-cols-[25%,1fr]">
       <Sidebar />
 
       <div id="transcript" className="bg-white">
-        <p>Conversão: {id}</p>
-
-        <Header />
-
-        <Content>
-          ## Markdowon - OneNote HTML MAP## The first line (above) is the TITLE
-          # This is a HEADING # * This is in bold* ! This is in italic! 1.
-          Number 1 2. Number 2 3. Number 3 `{">"}` Bullet I `{">"}`Bullet 2 `
-          {">"}`Bullet 3 # Heading with *! BOLD AND ITALIC !* # That`&apos;`s it
-          for now!
-        </Content>
+        <EditorContent
+          post={{
+            id: post.id,
+            title: post.title,
+            content: post.content,
+            published: post.published,
+          }}
+        />
       </div>
     </div>
   );

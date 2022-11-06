@@ -16,7 +16,8 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hot-toast": "2.4.0",
-    "ui": "*"
+    "ui": "*",
+    "utils": "*"
   },
   "devDependencies": {
     "@types/lodash": "4.14.186",
@@ -25,6 +26,7 @@
     "@types/react-dom": "17.0.11",
     "autoprefixer": "10.4.7",
     "config": "*",
+    "clsx": "1.2.1",
     "eslint-config-custom": "*",
     "next-transpile-modules": "9.1.0",
     "postcss": "8.4.14",

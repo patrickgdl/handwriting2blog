@@ -1,4 +1,4 @@
-import { FAVICON_FOLDER } from "../lib/constants";
+import { FAVICON_FOLDER } from "utils";
 
 export function Meta() {
   return (

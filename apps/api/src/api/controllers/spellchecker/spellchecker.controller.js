@@ -7,34 +7,41 @@ const OPENAI_MODEL_TYPES = {
   ada: "text-ada-002",
 };
 
+// Creates a client
+const configuration = new Configuration({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+
+// instantiate the OpenAIApi class
+const openai = new OpenAIApi(configuration);
+
 async function openAIToPTBr(prompt) {
-  // Creates a client
-  const configuration = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY,
-  });
-
-  // instantiate the OpenAIApi class
-  const openai = new OpenAIApi(configuration);
-
   // create a completion request
   const response = await openai.createCompletion({
     model: OPENAI_MODEL_TYPES.davinci,
-    prompt: `Correct this to standard Portuguese:\n\n${prompt}`,
-    temperature: 0,
+    prompt: generatePrompt(prompt),
     max_tokens: 60,
-    top_p: 1.0,
-    frequency_penalty: 0.0,
-    presence_penalty: 0.0,
+    temperature: 0.6,
   });
 
   return response;
 }
 
-async function correctToPt(req, res) {
+export default async function spellchecker(req, res) {
   const { query } = req;
 
-  const { data } = await openAIToPTBr(query.prompt);
-  return res.send(data);
+  const completion = await openAIToPTBr(query.prompt);
+  res.status(200).json({ result: completion.data.choices[0].text });
 }
 
-export default correctToPt;
+function generatePrompt(prompt) {
+  const capitalized = prompt[0].toUpperCase() + prompt.slice(1).toLowerCase();
+  return `Correct this to standard Portuguese:\n\n.
+
+Prompt: verificar si es bolitos ustão oburtos no banco 
+Result: verificar se os boletos estão abertos no banco
+Prompt: verificar si entrou o pix no pogseguro.
+Result: verificar se entrou o pix na pagseguro
+Prompt: ${capitalized}
+Result:`;
+}

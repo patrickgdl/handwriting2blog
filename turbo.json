@@ -21,6 +21,7 @@
     "PORT",
     "BUCKET_NAME",
     "HOSTNAME",
-    "BASE_URL"
+    "BASE_URL",
+    "OPENAI_API_KEY"
   ]
 }

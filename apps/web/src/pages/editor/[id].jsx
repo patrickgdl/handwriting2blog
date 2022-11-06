@@ -1,11 +1,18 @@
-import { Content, Sidebar, Header } from "../components/editor";
+import { useRouter } from "next/router";
+
+import { Content, Sidebar, Header } from "../../components/editor";
 
 export default function Editor() {
+  const router = useRouter();
+  const { id } = router.query;
+
   return (
     <div className="relative grid xl:grid-cols-[25%,1fr]">
       <Sidebar />
 
       <div id="transcript" className="bg-white">
+        <p>Conversão: {id}</p>
+
         <Header />
 
         <Content>

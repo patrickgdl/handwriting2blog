@@ -4,8 +4,10 @@ import { uniqueId } from "lodash";
 import React from "react";
 import toast from "react-hot-toast";
 import { Button, DragAndDrop, FileList } from "ui";
+import { useRouter } from "next/router";
 
 export const FileUpload = () => {
+  const router = useRouter();
   const [files, setFiles] = React.useState([]);
   const [originalFiles, setOriginalFiles] = React.useState([]);
 
@@ -23,20 +25,22 @@ export const FileUpload = () => {
     formData.append("file", originalFiles[0]);
 
     try {
-      const res = await axios.post("api/upload", formData, {
-        onUploadProgress: (e) => {
-          const progress = parseInt(Math.round((e.loaded * 100) / e.total));
+      // const res = await axios.post("api/upload", formData, {
+      //   onUploadProgress: (e) => {
+      //     const progress = parseInt(Math.round((e.loaded * 100) / e.total));
 
-          updateFile(files[0].id, {
-            progress,
-          });
-        },
-      });
+      //     updateFile(files[0].id, {
+      //       progress,
+      //     });
+      //   },
+      // });
 
-      updateFile(files[0].id, {
-        uploaded: true,
-        url: res?.data?.message?.path,
-      });
+      // updateFile(files[0].id, {
+      //   uploaded: true,
+      //   url: res?.data?.message?.path,
+      // });
+
+      router.push(`/editor/${1}`);
     } catch (error) {
       console.error(error);
 

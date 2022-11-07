@@ -1,4 +1,8 @@
 {
+  "name": "handwriting2blog",
+  "version": "0.0.1",
+  "description": "Handwriting to blog",
+  "author": "Patrick Lima <me@patricklima.dev>",
   "private": true,
   "workspaces": [
     "apps/*",

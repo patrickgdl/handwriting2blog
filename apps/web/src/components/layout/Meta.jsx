@@ -3,10 +3,10 @@ import { FAVICON_FOLDER } from "utils";
 export function Meta() {
   return (
     <>
-      <title>handwriting2html</title>
+      <title>handwriting2blog</title>
       <meta
         name="description"
-        content="An open-source handwriting to HTML converter with AI integration."
+        content="An open-source handwriting to Blog converter with AI integration."
       />
       <link
         rel="apple-touch-icon"
@@ -38,15 +38,15 @@ export function Meta() {
       <meta property="og:image" content="https://escrita.com/thumbnail.png" />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@handwriting2html" />
+      <meta name="twitter:site" content="@handwriting2blog" />
       <meta name="twitter:creator" content="@opatrickgdl" />
       <meta
         name="twitter:title"
-        content="handwriting2html - Open-Source Handwriting to HTML"
+        content="handwriting2blog - Open-Source Handwriting to Blog converter"
       />
       <meta
         name="twitter:description"
-        content="An open-source handwriting to HTML converter"
+        content="An open-source handwriting to Blog converter"
       />
       <meta name="twitter:image" content="https://escrita.com/thumbnail.png" />
     </>

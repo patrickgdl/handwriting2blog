@@ -35,7 +35,7 @@ export function UserAccountNav(user) {
           <DropdownMenu.Separator />
           <DropdownMenu.Item>
             <Link
-              href="https://github.com/patrickgdl/handwriting2html"
+              href="https://github.com/patrickgdl/handwriting2blog"
               className="w-full"
               target="_blank"
             >

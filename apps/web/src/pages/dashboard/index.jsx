@@ -4,8 +4,8 @@ import {
   PostCreateButton,
   PostItem,
   EmptyPlaceholder,
-} from "../components/dashboard";
-import DashboardLayout from "../components/layout/Dashboard";
+} from "../../components/dashboard";
+import DashboardLayout from "../../components/layout/Dashboard";
 
 export default function Dashboard() {
   const posts = [];

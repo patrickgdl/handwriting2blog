@@ -1,4 +1,5 @@
 export * from "./Alert";
+export * from "./Card";
 export * from "./Avatar";
 export * from "./DropdownMenu";
 export * from "./Button";

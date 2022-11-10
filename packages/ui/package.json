@@ -9,6 +9,7 @@
     "@radix-ui/react-alert-dialog": "1.0.2",
     "@radix-ui/react-avatar": "1.0.1",
     "@radix-ui/react-dropdown-menu": "2.0.1",
+    "@radix-ui/react-tabs": "1.0.1",
     "react-dropzone": "14.2.3",
     "react-circular-progressbar": "2.1.0",
     "utils": "*"

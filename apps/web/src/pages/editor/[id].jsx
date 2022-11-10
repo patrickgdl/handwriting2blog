@@ -1,4 +1,8 @@
-import { Editor as EditorContent, Sidebar } from "../../components/editor";
+import {
+  Editor as EditorContent,
+  Footer,
+  Sidebar,
+} from "../../components/editor";
 
 export default function Editor() {
   const post = {
@@ -13,7 +17,7 @@ export default function Editor() {
   }
 
   return (
-    <div className="relative grid xl:grid-cols-[25%,1fr]">
+    <div className="relative grid xl:grid-cols-[20%,1fr]">
       <Sidebar />
 
       <div id="transcript" className="bg-white">
@@ -26,6 +30,8 @@ export default function Editor() {
           }}
         />
       </div>
+
+      <Footer />
     </div>
   );
 }

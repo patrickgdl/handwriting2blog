@@ -117,13 +117,6 @@ export function Editor({ post }) {
             {...register("title")}
           />
           <div id="editor" className="min-h-[500px]" />
-          <p className="text-sm text-gray-500">
-            Use{" "}
-            <kbd className="rounded-md border bg-slate-50 px-1 text-xs uppercase">
-              Tab
-            </kbd>{" "}
-            para abrir o menu de comando.
-          </p>
         </div>
       </div>
     </form>

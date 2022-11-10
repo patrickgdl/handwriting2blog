@@ -2,19 +2,15 @@ import React from "react";
 import { Logo } from "ui";
 
 const titles = [
-  { label: "Why google has a monorepo", isSubtitle: false },
-  { label: "Sponsored by turborebo", isSubtitle: false },
-  { label: "Benefits of a Monorepo", isSubtitle: true, active: true },
-  { label: "Nx vs turborepo", isSubtitle: false },
-  { label: "NX and Vercel: A Comparison", isSubtitle: false },
-  { label: "Build your first monorepo", isSubtitle: false },
-  { label: "Building and Deploying an Application", isSubtitle: false },
-  { label: "The Pros and Con of Monorepos", isSubtitle: false },
+  { label: "Título Principal", isSubtitle: false },
+  { label: "Título 2", isSubtitle: false },
+  { label: "Teste de Subtítulo", isSubtitle: true, active: true },
+  { label: "Título 3", isSubtitle: false },
 ];
 
 export const Sidebar = () => {
   return (
-    <div className="hidden bg-slate-900 pl-20 pr-14 xl:block">
+    <div className="hidden bg-slate-900 pl-16 pr-10 xl:block">
       <div className="sticky top-0 z-20 h-screen py-10">
         <Logo color="white" />
 

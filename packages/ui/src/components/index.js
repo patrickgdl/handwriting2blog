@@ -1,6 +1,7 @@
 export * from "./Alert";
 export * from "./Card";
 export * from "./Avatar";
+export * from "./Dialog";
 export * from "./DropdownMenu";
 export * from "./Button";
 export * from "./DragAndDrop";
@@ -12,3 +13,4 @@ export * from "./Logo";
 export * from "./LogoGradient";
 export * from "./Sidebar";
 export * from "./Skeleton";
+export * from "./Tabs";

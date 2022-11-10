@@ -1,8 +1,16 @@
-import { DashboardHeader, DashboardShell } from "../../components/dashboard";
+import {
+  DashboardHeader,
+  DashboardShell,
+  UserNameForm,
+} from "../../components/dashboard";
 import Dashboard from "../../components/layout/Dashboard";
-import { UserNameForm } from "../../components/settings";
 
 export default function Settings() {
+  const user = {
+    id: 1,
+    name: "Patrick Lima",
+  };
+
   return (
     <Dashboard>
       <DashboardShell>
@@ -11,7 +19,7 @@ export default function Settings() {
           text="Gerencie as configurações da conta e do site."
         />
         <div className="grid gap-10">
-          <UserNameForm user={{ id: "1", name: "Patrick Lima" }} />
+          <UserNameForm user={{ id: user.id, name: user.name }} />
         </div>
       </DashboardShell>
     </Dashboard>

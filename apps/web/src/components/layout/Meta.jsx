@@ -1,13 +1,41 @@
+import Head from "next/head";
+import { useRouter } from "next/router";
 import { FAVICON_FOLDER } from "utils";
 
 export function Meta() {
+  const router = useRouter();
+  const meta = {
+    title: "handwriting2blog",
+    description:
+      "handwriting2blog - Open-Source Handwriting to Blog converter.",
+    cardImage: "/thumbnail.png",
+    logoImage: "/logo.png",
+  };
+
   return (
-    <>
-      <title>handwriting2blog</title>
+    <Head>
+      <title>{meta.title}</title>
+      <meta name="robots" content="follow, index" />
+      <link href="/favicon.ico" rel="shortcut icon" />
+      <meta content={meta.description} name="description" />
       <meta
-        name="description"
-        content="An open-source handwriting to Blog converter with AI integration."
+        property="og:url"
+        content={`https://handwriting2blog.vercel.app${router.asPath}`}
       />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content={meta.title} />
+      <meta property="og:description" content={meta.description} />
+      <meta property="og:title" content={meta.title} />
+      <meta property="og:image" content={meta.cardImage} />
+      <meta property="og:logo" content={meta.logoImage}></meta>
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@handwriting2blog" />
+      <meta name="twitter:creator" content="@opatrickgdl" />
+      <meta name="twitter:title" content={meta.title} />
+      <meta name="twitter:description" content={meta.description} />
+      <meta name="twitter:image" content={meta.cardImage} />
+
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -33,22 +61,6 @@ export function Meta() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="keywords" content="hacker news, slack, bot" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta itemProp="image" content="https://escrita.com/thumbnail.png" />
-      <meta property="og:logo" content="https://escrita.com/logo.png"></meta>
-      <meta property="og:image" content="https://escrita.com/thumbnail.png" />
-
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@handwriting2blog" />
-      <meta name="twitter:creator" content="@opatrickgdl" />
-      <meta
-        name="twitter:title"
-        content="handwriting2blog - Open-Source Handwriting to Blog converter"
-      />
-      <meta
-        name="twitter:description"
-        content="An open-source handwriting to Blog converter"
-      />
-      <meta name="twitter:image" content="https://escrita.com/thumbnail.png" />
-    </>
+    </Head>
   );
 }

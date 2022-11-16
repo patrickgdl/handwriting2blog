@@ -5,35 +5,35 @@ import {
   Background,
   Features,
   FileUpload,
-  Header,
   Hero,
   More,
   Why,
 } from "../components/home";
+import Layout from "../components/layout";
 
 const Home = () => {
   return (
-    <div className="bg-white font-display">
-      <Background />
+    <Layout>
+      <div className="bg-white font-display">
+        <Background />
 
-      <div className="h-screen">
-        <Header />
+        <div className="h-screen">
+          <div className="flex h-[calc(100%_-_120px)] flex-col items-center justify-center text-center">
+            <Hero />
 
-        <div className="flex h-[calc(100%_-_120px)] flex-col items-center justify-center text-center">
-          <Hero />
-
-          <FileUpload />
+            <FileUpload />
+          </div>
         </div>
+
+        <Why />
+
+        <Features />
+
+        <More />
+
+        <Toaster />
       </div>
-
-      <Why />
-
-      <Features />
-
-      <More />
-
-      <Toaster />
-    </div>
+    </Layout>
   );
 };
 

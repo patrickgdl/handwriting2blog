@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useUser, useSupabaseClient } from "@supabase/auth-helpers-react";
 
 import { ButtonAlt, LoadingDots, Input, LogoGradient, GitHub } from "ui";
-import { getURL } from "../components/lib/utils";
+import { getURL } from "../components/lib/utils/helpers";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");

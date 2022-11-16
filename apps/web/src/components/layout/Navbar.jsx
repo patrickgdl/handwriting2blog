@@ -3,7 +3,7 @@ import s from "./Navbar.module.css";
 
 import { LogoGradient } from "ui";
 import { useRouter } from "next/router";
-import { useUser } from "../lib/utils";
+import { useUser } from "../lib/utils/useUser";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 
 export const Navbar = () => {
@@ -23,7 +23,7 @@ export const Navbar = () => {
             </Link>
 
             <nav className="ml-8 hidden space-x-4 lg:block">
-              <Link href="/">
+              <Link href="/pricing">
                 <a className={s.link}>Preços</a>
               </Link>
               <Link href="/account">

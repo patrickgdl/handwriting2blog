@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useUser, useSupabaseClient } from "@supabase/auth-helpers-react";
 
 import { ButtonAlt, Input, LogoGradient } from "ui";
-import { updateUserName } from "../components/lib/utils";
+import { updateUserName } from "../components/lib/supabase/supabase-client";
 
 const SignUp = () => {
   const supabaseClient = useSupabaseClient();

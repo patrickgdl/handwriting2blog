@@ -5,12 +5,8 @@ export const StepFour = () => {
     <div className="mt-0 lg:mt-36">
       <div className="relative mx-auto max-w-6xl space-y-12 px-8 lg:flex lg:space-y-0 lg:space-x-24 xl:px-0">
         <div className="relative z-30 flex w-full max-w-xl flex-col lg:w-2/5 lg:items-end lg:justify-start lg:text-right">
-          <div className="relative h-24 w-40 rounded bg-gradient-to-br from-indigo-400 via-purple-400 to-blue-200 ring-2 ring-green-500 ring-offset-2 saturate-150">
-            <div className="flex h-full w-full items-center justify-center text-7xl text-yellow-300">
-              4
-            </div>
-          </div>
           <h2 className="mt-12 bg-gradient-to-br from-slate-900 to-violet-700 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl sm:leading-none">
+            <span className="text-green-500">4. </span>
             Publique
           </h2>
           <p className="mt-5 text-base text-slate-700 md:text-lg">

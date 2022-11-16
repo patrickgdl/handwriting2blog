@@ -5,6 +5,7 @@ import React from "react";
 import toast from "react-hot-toast";
 import { Button, DragAndDrop, FileList } from "ui";
 import { useRouter } from "next/router";
+import { BounceArrow } from "./BounceArrow";
 
 export const FileUpload = () => {
   const router = useRouter();
@@ -84,11 +85,16 @@ export const FileUpload = () => {
   };
 
   return (
-    <form onSubmit={(e) => onUpload(e)} encType="multipart/form-data">
+    <form
+      className="relative my-4"
+      onSubmit={(e) => onUpload(e)}
+      encType="multipart/form-data"
+    >
+      <BounceArrow text="Comece aqui" />
+
       <DragAndDrop onUpload={handleUpload} />
 
       <FileList files={files} onDelete={handleDelete} onTryAgain={onUpload} />
-
       {files?.length > 0 && (
         <div className="mt-8">
           <Button

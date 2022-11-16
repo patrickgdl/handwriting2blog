@@ -3,9 +3,9 @@ import Dropzone from "react-dropzone";
 const DropContainer = ({ children, isDragActive, isDragReject }) => {
   return (
     <section
-      className={`my-8 cursor-pointer rounded-md bg-white p-4 ${
-        (isDragActive ? "border-green-500" : null) ||
-        (isDragReject ? "border-red-500" : null)
+      className={`my-8 cursor-pointer rounded-md bg-white ${
+        (isDragActive ? "border-green-500" : "") ||
+        (isDragReject ? "border-red-500" : "")
       }`}
     >
       {children}
@@ -32,9 +32,7 @@ const UploadMessage = ({ children, type = null }) => {
 export const DragAndDrop = ({ onUpload }) => {
   const renderDragMessage = (isDragActive, isDragReject) => {
     if (!isDragActive) {
-      return (
-        <UploadMessage>Selecione ou arraste um arquivo aqui...</UploadMessage>
-      );
+      return <UploadMessage>Selecione ou arraste um arquivo...</UploadMessage>;
     }
 
     if (isDragReject) {
@@ -54,7 +52,7 @@ export const DragAndDrop = ({ onUpload }) => {
       {({ getRootProps, getInputProps, isDragActive, isDragReject }) => (
         <DropContainer>
           <div
-            className="rounded-md border-2 border-dashed border-indigo-600 px-6 pt-5 pb-6 hover:border-solid"
+            className="rounded-md border-2 border-dashed border-indigo-600 p-6 hover:border-solid"
             {...getRootProps()}
           >
             <svg

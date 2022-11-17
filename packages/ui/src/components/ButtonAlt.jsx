@@ -1,7 +1,7 @@
 import React, { forwardRef, useRef } from "react";
 import styles from "./ButtonAlt.module.css";
 
-import LoadingDots from "./LoadingDots";
+import { LoadingDots } from "./LoadingDots";
 import { cn } from "utils";
 
 export const ButtonAlt = forwardRef((props, buttonRef) => {

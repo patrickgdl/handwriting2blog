@@ -59,19 +59,19 @@ const SignUp = () => {
   return (
     <div className="height-screen-helper flex justify-center font-display">
       <div className="m-auto flex w-80 max-w-lg flex-col justify-between p-3 ">
-        <div className="flex justify-center pb-12 ">
-          <LogoGradient />
-        </div>
+        <Link href="/">
+          <a className="flex justify-center">
+            <LogoGradient />
+          </a>
+        </Link>
 
-        <form onSubmit={handleSignup} className="flex flex-col space-y-4">
+        <form onSubmit={handleSignup} className="flex flex-col space-y-4 pt-12">
           {message.content && (
             <div
               className={`${
-                message.type === "error" ? "text-pink-500" : "text-green-500"
+                message.type === "error" ? "text-red-500" : "text-green-500"
               } border ${
-                message.type === "error"
-                  ? "border-pink-500"
-                  : "border-green-500"
+                message.type === "error" ? "border-red-500" : "border-green-500"
               } p-3`}
             >
               {message.content}

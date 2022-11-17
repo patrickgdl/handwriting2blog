@@ -11,7 +11,7 @@
 }
 
 .link:focus {
-  @apply text-slate-500 outline-none ring-2 ring-pink-500 ring-opacity-50;
+  @apply text-slate-500 outline-none ring-2 ring-violet-500 ring-opacity-50;
 }
 
 .logo {

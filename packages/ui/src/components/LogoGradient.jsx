@@ -1,7 +1,9 @@
-export const LogoGradient = () => {
+import { cn } from "utils";
+
+export const LogoGradient = ({ className }) => {
   return (
     <svg
-      className="h-10 w-auto"
+      className={cn("h-10 w-auto", className)}
       viewBox="0 0 126 148"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

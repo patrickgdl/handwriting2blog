@@ -76,7 +76,7 @@ const SignIn = () => {
 
   if (!user)
     return (
-      <div className="height-screen-helper flex justify-center">
+      <div className="height-screen-helper flex justify-center font-display">
         <div className="m-auto flex w-80 max-w-lg flex-col justify-between p-3 ">
           <div className="flex justify-center pb-12">
             <LogoGradient />

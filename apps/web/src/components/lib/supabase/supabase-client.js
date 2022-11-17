@@ -15,7 +15,7 @@ export const getActiveProductsWithPrices = async () => {
     console.log(error.message);
     throw error;
   }
-  // TODO: improve the typing here.
+
   return data || [];
 };
 

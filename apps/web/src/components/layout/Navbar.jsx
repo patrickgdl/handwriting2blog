@@ -18,7 +18,7 @@ export const Navbar = () => {
           <div className="flex flex-1 items-center">
             <Link href="/">
               <a className={s.logo} aria-label="Logo">
-                <LogoGradient />
+                <LogoGradient className="h-8" />
               </a>
             </Link>
 

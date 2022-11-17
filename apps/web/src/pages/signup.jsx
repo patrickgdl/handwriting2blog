@@ -7,8 +7,6 @@ import { ButtonAlt, Input, LogoGradient } from "ui";
 import { updateUserName } from "../components/lib/supabase/supabase-client";
 
 const SignUp = () => {
-  const supabaseClient = useSupabaseClient();
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -21,6 +19,7 @@ const SignUp = () => {
 
   const user = useUser();
   const router = useRouter();
+  const supabaseClient = useSupabaseClient();
 
   const handleSignup = async (e) => {
     e.preventDefault();
@@ -34,6 +33,7 @@ const SignUp = () => {
       email,
       password,
     });
+
     if (error) {
       setMessage({ type: "error", content: error.message });
     } else {

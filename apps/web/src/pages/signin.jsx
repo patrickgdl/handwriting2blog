@@ -9,14 +9,15 @@ import { getURL } from "../components/lib/utils/helpers";
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showPasswordInput, setShowPasswordInput] = useState(false);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState({
     type: "",
     content: "",
   });
-  const router = useRouter();
+  const [showPasswordInput, setShowPasswordInput] = useState(false);
+
   const user = useUser();
+  const router = useRouter();
   const supabaseClient = useSupabaseClient();
 
   const handleSignin = async (e) => {
@@ -39,15 +40,18 @@ const SignIn = () => {
       });
       error = res.error;
     }
+
     if (error) {
       setMessage({ type: "error", content: error.message });
     }
+
     if (!password) {
       setMessage({
         type: "note",
         content: "Verifique seu e-mail para o link mágico.",
       });
     }
+
     setLoading(false);
   };
 
@@ -57,6 +61,7 @@ const SignIn = () => {
       provider,
       options: { redirectTo: getURL() },
     });
+
     if (error) {
       setMessage({ type: "error", content: error.message });
     }
@@ -158,7 +163,7 @@ const SignIn = () => {
               {` `}
               <Link href="/signup">
                 <a className="text-accent-9 cursor-pointer font-bold hover:underline">
-                  Cadastra-se.
+                  Cadastre-se.
                 </a>
               </Link>
             </span>

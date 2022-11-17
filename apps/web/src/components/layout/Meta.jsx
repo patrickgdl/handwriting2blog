@@ -1,9 +1,6 @@
-import Head from "next/head";
-import { useRouter } from "next/router";
 import { FAVICON_FOLDER } from "utils";
 
 export function Meta() {
-  const router = useRouter();
   const meta = {
     title: "handwriting2blog",
     description:
@@ -13,15 +10,14 @@ export function Meta() {
   };
 
   return (
-    <Head>
+    <>
       <title>{meta.title}</title>
       <meta name="robots" content="follow, index" />
-      <link href="/favicon.ico" rel="shortcut icon" />
       <meta content={meta.description} name="description" />
-      <meta
+      {/* <meta
         property="og:url"
-        content={`https://handwriting2blog.vercel.app${router.asPath}`}
-      />
+        content={`https://handwriting2blog.vercel.app/${location.pathname}`}
+      /> */}
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={meta.title} />
       <meta property="og:description" content={meta.description} />
@@ -61,6 +57,6 @@ export function Meta() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="keywords" content="hacker news, slack, bot" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </Head>
+    </>
   );
 }

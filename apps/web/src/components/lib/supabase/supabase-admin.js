@@ -76,7 +76,7 @@ export const createOrRetrieveCustomer = async ({ email, uuid }) => {
 };
 
 /**
- * Copies the billing details from the payment method to the customer object.
+ * Copies the billing details from the payment method to the customer object (Stripe and Supabase).
  */
 export const copyBillingDetailsToCustomer = async (uuid, payment_method) => {
   //Todo: check this assertion
@@ -126,8 +126,7 @@ export const manageSubscriptionStatusChange = async (
     metadata: subscription.metadata,
     status: subscription.status,
     price_id: subscription.items.data[0].price.id,
-    //TODO check quantity on subscription
-    quantity: subscription.quantity,
+    quantity: subscription?.quantity ?? subscription.items.data[0].quantity,
     cancel_at_period_end: subscription.cancel_at_period_end,
     cancel_at: subscription.cancel_at
       ? toDateTime(subscription.cancel_at).toISOString()
@@ -156,7 +155,9 @@ export const manageSubscriptionStatusChange = async (
   const { error } = await supabase
     .from("subscriptions")
     .upsert([subscriptionData]);
+
   if (error) throw error;
+
   console.log(
     `Assinatura inserida/atualizada [${subscription.id}] para usuário [${uuid}]`
   );

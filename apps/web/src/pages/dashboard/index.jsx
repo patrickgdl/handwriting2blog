@@ -1,11 +1,15 @@
+import { withPageAuth } from "@supabase/auth-helpers-nextjs";
+
 import {
   DashboardHeader,
   DashboardShell,
+  EmptyPlaceholder,
   PostCreateButton,
   PostItem,
-  EmptyPlaceholder,
 } from "../../components/dashboard";
 import DashboardLayout from "../../components/layout/Dashboard";
+
+export const getServerSideProps = withPageAuth({ redirectTo: "/signin" });
 
 export default function Dashboard() {
   const posts = [];

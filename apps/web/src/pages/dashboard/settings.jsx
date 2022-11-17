@@ -1,9 +1,13 @@
+import { withPageAuth } from "@supabase/auth-helpers-nextjs";
+
 import {
   DashboardHeader,
   DashboardShell,
   UserNameForm,
 } from "../../components/dashboard";
 import Dashboard from "../../components/layout/Dashboard";
+
+export const getServerSideProps = withPageAuth({ redirectTo: "/signin" });
 
 export default function Settings() {
   const user = {

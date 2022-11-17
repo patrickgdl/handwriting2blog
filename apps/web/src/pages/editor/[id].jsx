@@ -1,8 +1,12 @@
+import { withPageAuth } from "@supabase/auth-helpers-nextjs";
+
 import {
   Editor as EditorContent,
   Footer,
   Sidebar,
 } from "../../components/editor";
+
+export const getServerSideProps = withPageAuth({ redirectTo: "/signin" });
 
 export default function Editor() {
   const post = {

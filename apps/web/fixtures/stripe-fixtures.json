@@ -9,7 +9,7 @@
       "method": "post",
       "params": {
         "name": "Hobby",
-        "description": "Hobby product description"
+        "description": "Até 3 conversões de textos de 1000 palavras."
       }
     },
     {
@@ -18,9 +18,9 @@
       "method": "post",
       "params": {
         "product": "${prod_hobby:id}",
-        "currency": "usd",
+        "currency": "brl",
         "billing_scheme": "per_unit",
-        "unit_amount": 1000,
+        "unit_amount": 0,
         "recurring": {
           "interval": "month",
           "interval_count": 1
@@ -33,9 +33,9 @@
       "method": "post",
       "params": {
         "product": "${prod_hobby:id}",
-        "currency": "usd",
+        "currency": "brl",
         "billing_scheme": "per_unit",
-        "unit_amount": 10000,
+        "unit_amount": 0,
         "recurring": {
           "interval": "year",
           "interval_count": 1
@@ -43,21 +43,21 @@
       }
     },
     {
-      "name": "prod_freelancer",
+      "name": "prod_pro",
       "path": "/v1/products",
       "method": "post",
       "params": {
-        "name": "Freelancer",
-        "description": "Freelancer product description"
+        "name": "Pro",
+        "description": "Conversões ilimitadas de até 20 mil palavras."
       }
     },
     {
-      "name": "price_freelancer_month",
+      "name": "price_pro_month",
       "path": "/v1/prices",
       "method": "post",
       "params": {
-        "product": "${prod_freelancer:id}",
-        "currency": "usd",
+        "product": "${prod_pro:id}",
+        "currency": "brl",
         "billing_scheme": "per_unit",
         "unit_amount": 2000,
         "recurring": {
@@ -67,14 +67,14 @@
       }
     },
     {
-      "name": "price_freelancer_year",
+      "name": "price_pro_year",
       "path": "/v1/prices",
       "method": "post",
       "params": {
-        "product": "${prod_freelancer:id}",
-        "currency": "usd",
+        "product": "${prod_pro:id}",
+        "currency": "brl",
         "billing_scheme": "per_unit",
-        "unit_amount": 20000,
+        "unit_amount": 18000,
         "recurring": {
           "interval": "year",
           "interval_count": 1

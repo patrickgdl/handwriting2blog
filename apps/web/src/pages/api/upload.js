@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 
 // disable body parser because we need to pass the request as is
 export const config = {
@@ -10,13 +10,13 @@ export const config = {
 const postToApi = async (req, res) => {
   try {
     const { data } = await axios.post(
-      `${process.env.BASE_URL}/v1/bucket/upload`,
+      `${process.env.API_BASE_URL}/v1/bucket/upload`,
       req,
       {
         headers: {
-          'Content-Type': req.headers['content-type'], // multipart/form-data with boundary included
+          "Content-Type": req.headers["content-type"], // multipart/form-data with boundary included
         },
-      },
+      }
     );
 
     return res.status(201).send(data);
@@ -29,9 +29,9 @@ const postToApi = async (req, res) => {
 };
 
 const handler = (req, res) => {
-  return req.method === 'POST'
+  return req.method === "POST"
     ? postToApi(req, res)
-    : res.status(405).json({ message: 'Method not allowed' });
+    : res.status(405).json({ message: "Method not allowed" });
 };
 
 export default handler;

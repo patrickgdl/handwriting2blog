@@ -16,7 +16,7 @@ export const StepOne = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center lg:w-3/5">
-          <div className="relative h-40 rounded bg-gradient-to-br from-indigo-400 via-purple-400 to-blue-200 shadow-2xl shadow-violet-400/80 ring-2 ring-violet-500 ring-offset-2 saturate-150">
+          <div className="relative h-40 rounded shadow-2xl shadow-violet-700/80 ring-2 ring-violet-900 ring-offset-2 saturate-150">
             <img
               src="https://i0.wp.com/thepostmansknock.com/wp-content/uploads/2017/03/1cursive_worksheet-12-of-15.jpg?resize=960%2C633&ssl=1"
               className="h-full rounded object-cover"
